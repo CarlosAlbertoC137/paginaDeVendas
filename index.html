@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de vendas</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+</head>
+<body>
+    <header>
+        <h2>Nome da Loja</h2>
+        <button class="hamburguer-button" id="hamburguer-button"><i class="fa fa-bars"></i></button>
+        <nav class="responsive-navBar displayNone" id="responsive-navBar">
+            <button class="close-button" id="close-button"><i class="fa fa-times"></i></button>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#products">Produtos</a>
+                </li>
+                <li>
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navBar" id="navbar">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#products">Produtos</a>
+                </li>
+                <li>
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="banner-container">
+            <h1>Promoções de Verão - Até 50% OFF!</h1>
+        </div>
+        <div class="products-container" id="products">
+            <div class="product">
+                <img src="./img/productImg1.jpg" alt="blusas">
+                <p>Blusas a partir de:</p>
+                <p class="bold">R$89,90</p>
+                <button class="see-more">Ver mais</button>
+            </div>
+            <div class="product">
+                <img src="./img/productImg2.avif" alt="bermudas">
+                <p>Bermudas a partir de:</p>
+                <p class="bold">R$79,90</p>
+                <button class="see-more">Ver mais</button>
+            </div>
+            <div class="product">
+                <img src="./img/productImg3.jpg" alt="chinelo">
+                <p>Chinelos a partir de:</p>
+                <p class="bold">R$99,90</p>
+                <button class="see-more">Ver mais</button>
+            </div>
+            <div class="product">
+                <img src="./img/productImg4.webp" alt="acessórios">
+                <p>Acessórios a partir de:</p>
+                <p class="bold">R$49,90</p>
+                <button class="see-more">Ver mais</button>
+            </div>
+        </div>
+        <div class="sobre" id="sobre">
+            <h4>Sobre Nós</h4>
+            <p>Nossa loja é especializada em camisas de alta qualidade, oferecendo uma ampla variedade de estilos e tamanhos. Nosso compromisso é com a satisfação do cliente, oferecendo produtos duráveis e confortáveis.</p>
+        </div>
+        <div class="contact" id="contact">
+            <h4>Contato</h4>
+            <p>Email: 1234@1234.com | Telefone: (00)12345-1234</p>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2024 Loja de Roupas e acessórios. Todos os direitos reservados.</p>
+        </footer>
+    </main>
+</body>
+</html>

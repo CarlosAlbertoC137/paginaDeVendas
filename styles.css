@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0,142,255,1)12%,rgba(158,194,247,1) 79%, rgba(150,255,227,1) 100%);
+    position: fixed;
+}
+
+header h2{
+    margin-left: 10px;
+    color: #fff;
+    font-size: 23px;
+}
+
+.navBar{
+    margin-right: 10px;
+}
+.navBar ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.navBar a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(41, 40, 40);
+    transition: .3s;
+    opacity: .9;
+}
+
+.navBar a:hover{
+color: rgba(35,65,139,1);
+opacity: 1;
+font-size: 20px;
+}
+
+.hamburguer-button{
+    background: none;
+    font-size: 25px;
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    transition: .3s;
+}
+
+.hamburguer-button i{
+    color: rgb(50, 50, 50);
+}
+
+.responsive-navBar{
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(0,142,255,1)12%,rgba(158,194,247,1) 79%, rgba(150,255,227,1) 100%);
+    opacity: .9;
+    transition: .3s;
+}
+
+.responsive-navBar ul{
+    list-style: none;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 100px;
+    text-align: center;
+    
+}
+
+.responsive-navBar ul a{
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    gap: 40px;
+    opacity: .8;
+    transition: .3s;
+}
+
+.responsive-navBar .close-button{
+    background: none;
+    border: none;
+    font-size: 20px;
+    padding: 7px;
+    cursor: pointer;
+    opacity: .8;
+    transition: .3s;
+    
+}
+.responsive-navBar .close-button i{
+    color: rgb(43, 42, 42);
+}
+
+.responsive-navBar .close-button:hover, .responsive-navBar ul a:hover{
+    color: rgb(56, 170, 247);
+    font-size: 23px;
+}
+
+.displayNone{
+    display: none;
+}
+
+@media (min-width: 769px){
+    .responsive-navBar{
+        display: none;
+    }
+    .hamburguer-button{
+        display: none;
+    }
+}
+
+.banner-container{
+    width: 100%;
+    height: 500px;
+    padding-top: 150px;
+    background-image: url(./img/img1.jpg);
+    background-size: cover;
+    
+}
+
+.banner-container h1{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    color: rgb(126, 46, 0);
+}
+
+.products-container{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+
+.product {
+    width: 300px;
+    height: 350px;
+    border: 2px solid rgba(158,194,247,1);
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgba(185, 211, 250, .7);
+    box-shadow: 10px 10px 5px 0px rgba(158,194,247,1);
+    transition: .3s;
+}
+.product:hover{
+    transform: scale(1.2);
+    background-color: rgba(185, 211, 250, 1);
+}
+
+.product img{
+    width: 200px;
+    height: 250px;
+    align-items: center;
+    padding: 25px;
+    border-radius: 35px;
+}
+
+.product .bold{
+    font-weight: bold;
+    padding: 8px;
+    color: rgb(50, 50, 50)
+}
+
+.product p{
+    color: rgb(50, 50, 50)
+}
+
+.see-more{
+    background-color: #fff;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    color: rgb(63, 42, 255);
+    font-weight: bolder;
+    transition: .3s;
+}
+
+.see-more:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+    background-color: rgb(63, 42, 255);
+    color: #fff;
+}
+
+.sobre, .contact{
+    text-align: center;
+    margin-top: 50px;
+
+    
+}
+
+.sobre h4, .contact h4{
+    padding: 20px 50px;
+    font-size: 25px;
+    color: rgb(50, 50, 50)
+}
+
+.sobre p, .contact p{
+   
+    border: 2px solid rgba(158,194,247,1);
+    padding: 30px;
+    font-weight: bolder;
+    color: rgb(50, 50, 50);
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(158,194,247,1);
+    margin-top: 200px;
+}
+
+.footer p{
+    font-weight: bolder;
+    color: #fff;
+}
+
+@media (max-width: 768px){
+    .navBar{
+        display: none;
+    }
+    .products-container{
+        grid-template-columns: 1fr;
+        gap: 25px;
+        } 
+}
+
+@media (max-width: 1024px){
+    .products-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px;
+        } 
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
